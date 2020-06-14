@@ -3,7 +3,99 @@ package ahahah.control;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
- 
+
+public class PitcherVO{
+    private double ERA;
+    private int G;
+    private int CG;
+    private int SHO;
+    private int W;
+    private int L;
+    private int SV;
+    private int HLD;
+    private double WPCT;
+    private int TBF;
+    private String IP;
+    private int H;
+    private int HR;
+    private int BB;
+    private int HBP;
+    private int SO;
+    private int R;
+    private int ER;
+
+    public void setBB(int bb){
+        this.BB = bb;
+    }
+    public void setCG(int cg){
+        this.CG = cg;
+    }
+    public void setERA(double era){
+        this.ERA = era;
+    }
+    public void setG(int g){
+        this.G = g;
+    }
+    public void setH(int h){
+        this.H = h;
+    }
+    public void setHLD(int hld){
+        this.HLD = hld;
+    }
+    public void setHBP(int hbp){
+        this.HBP = hbp;
+    }
+    public void setHR(int hr){
+        this.HR = hr;
+    }
+    public void setIP(String ip){
+        this.IP = ip;
+    }
+    public void setL(int l){
+        this.L = l;
+    }
+    public void setR(int r){
+        this.R = r;
+    }
+    public void setSHO(int sho){
+        this.SHO = sho;
+    }
+    public void setSO(int so){
+        this.SO = so;
+    }
+    public void setSV(int sv){
+        this.SV = sv;
+    }
+    public void setTBF(int tbf){
+        this.TBF = tbf;
+    }
+    public void setW(int w){
+        this.W = w;
+    }
+    public void setWPCT(double wpct){
+        this.WPCT = wpct;
+    }
+    public void toString(){
+        print('%d, ',this.ERA);
+        print(this.G+', ');
+        print(this.CG+', ');
+        print(this.SHO+', ');
+        print(this.W+', ');
+        print(this.L+', ');
+        print(this.SV+', ');
+        print(this.HLD+', ');
+        print(this.WPCT+', ');
+        print(this.TBF+', ');
+        print(this.IP+', ');
+        print(this.H+', ');
+        print(this.HR+', ');
+        print(this.BB+', ');
+        print(this.HBP+', ');
+        print(this.SO+', ');
+        print(this.R+', ');
+        print(this.ER+', ');
+    }
+}
 public class KBOplayer_record_crawling{
  
     public static void main(String[] args) throws Exception {
@@ -45,7 +137,7 @@ public class KBOplayer_record_crawling{
                     PV.setG(G);
                     PV.setH(H);
                     PV.setHLD(HLD);
-                    PV.setHPB(HBP);
+                    PV.setHBP(HBP);
                     PV.setHR(HR);
                     PV.setIP(IP);
                     PV.setL(L);
